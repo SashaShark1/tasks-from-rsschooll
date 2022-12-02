@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <title>Momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]" data-i18="enter"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings-content"> 
+        <div class="settings-icon">
+          <img src="./assets/svg/settings.svg" alt="settings" class="settings-img">
+        </div>
+        
+        <div class="settings-container">
+          <h2 class="settings-title" data-i18="settings">Settings:</h2>
+          <div class="language-container">  
+            <span class="lang-text" data-i18="language">Language: </span> 
+            <div class="language-buttons">
+              <label class="lang lang-en" ><input type="radio" id="en" name="lang" value="en"> en  </label>  
+              <p> / </p>
+            <label  class="lang lang-bel" ><input type="radio" id="be" name="lang" value="be"> be </label> 
+            </div>        
+            
+          </div>
+          <div class="audio-off section-off">
+            <span data-i18="player">Player:</span>
+            <div class="form-check">
+              <input type="checkbox" class="audio-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk">Отслеживать свою заявку</label> -->
+          </div>
+          </div>
+          
+
+          <div class="weather-off section-off">
+            <span data-i18="weather">Weather:</span>
+            <div class="form-check">
+              <input type="checkbox" class="weather-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk"></label> -->
+          </div>
+          </div>
+          <div class="quote-off section-off">
+            <span data-i18="quotes">Quotes:</span>
+            <div class="form-check">
+              <input type="checkbox" class="quote-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk"></label> -->
+          </div>
+          </div>
+          <div class="time-off section-off">
+            <span data-i18="time">Time:</span>
+            <div class="form-check">
+              <input type="checkbox" class="time-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk"></label> -->
+          </div>
+          </div>
+          <div class="date-off section-off">
+            <span data-i18="date">Date:</span>
+            <div class="form-check">
+              <input type="checkbox" class="date-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk"></label> -->
+          </div>
+          </div>
+          <div class="greeting-off section-off">
+            <span data-i18="greeting">Greeting:</span>
+            <div class="form-check">
+              <input type="checkbox" class="greeting-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk"></label> -->
+          </div>
+          </div>
+          <div class="todo-off section-off">
+            <span data-i18="todo">Todo:</span>
+            <div class="form-check">
+              <input type="checkbox" class="todo-check check-off" id="chk" checked>
+              <!-- <label class="form-check-label" for="chk"></label> -->
+          </div>
+          </div>
+
+        </div>
+   
+      </div>
+    <div class="quote-content">
+       <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    </div>
+
+    <div class="todo-content">
+      <div class="notepad-logo">
+        <img src="./assets/svg/notepad.svg" alt="notepad" class="notepad-img">
+      </div>
+
+      <div class="todo-container">
+        <h2 class="todo-title" data-i18="todo-title">To-do list:</h2>
+        <div class="todo-type">
+          <input class="todo-input" type="text" placeholder="Type your task" data-i18="type-task">
+          <button class="save" data-i18="add">Add</button>
+        </div>
+        
+        <ul class="todos">         
+          
+      </ul>
+      <div class="todo-buttons-container">
+          <button class="clear todo-button" data-i18="clear">Clear</button>          
+          <button class="deleteall todo-button" data-i18="delete">Delete All</button>
+          
+      </div>
+  </div>
+      </div>
+
+    </div>
+   
+  </footer>
+  <script  src="./index.js" type="module"></script>
+</body>
+</html>
